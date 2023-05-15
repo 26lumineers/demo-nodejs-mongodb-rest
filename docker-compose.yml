@@ -2,7 +2,7 @@ version: '3'
 
 services:
     web-node-js:
-        image: 26lumineers/nodejs-demo:lastest
+        image: 26lumineers/nodejs-demo:latest
         ports:
             - "3000:3000"
         environment:
