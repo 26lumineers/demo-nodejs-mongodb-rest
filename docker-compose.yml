@@ -1,14 +1,12 @@
 version: '3'
-
 services:
-    web-node-js:
-        image: 26lumineers/nodejs-demo:latest
-        ports:
-            - "3000:3000"
-        environment:
-            - MONGODB_ADDON_URI=mongodb://mongodb:27017/test
-    mongodb:
-        image: mongo:3.4
-        ports: 
-            - "27017:27017"
-        
+  web-node-js:
+    image: '26lumineers/nodejs-demo:latest'
+    ports:
+      - '3000:3000'
+    environment:
+      - 'MONGODB_ADDON_URI=mongodb://mongodb:27017/test'
+  mongodb:
+    image: 'mongo:3.4'
+    ports:
+      - '27017:27017'
